@@ -1,4 +1,11 @@
 package com.aaa.base;
 
-public class CommonController {
+import java.util.Map;
+
+public abstract class CommonController<T> extends BaseController {
+    public abstract BaseService<T> getBaseService();
+
+    public ResultData add(Map map) {
+        return new ResultData();
+    }
 }
