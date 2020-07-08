@@ -1,0 +1,64 @@
+package com.aaa.base;
+
+import static com.aaa.status.LoginStatus.*;
+
+/**
+ * @Company AAA软件教育
+ * @Author
+ * @Date Create in 2020/7/8 11:11
+ * @Description
+ *      统一controller
+ *      也就是说所有的controller都需要继承这个controller，进行统一返回
+ *
+ *      eg:
+ *          登录成功和失败
+ *          code:200 msg:登录成功
+ *          code:400 msg:登录失败，系统异常
+ *          code:201 msg:用户已经存在
+ *          code:401 msg:用户不存在
+ *          code:402 msg:密码错误
+ *          code:405 msg:用户退出异常
+ *
+ **/
+public class BaseController {
+    /**
+     * @author
+     * @description
+     *      登录成功
+     *      使用系统消息
+     * @param []
+     * @date 2020/7/8
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
+    protected ResultData loginSuccess(){
+        ResultData resultData = new ResultData();
+        resultData.setCode(LOGIN_SUCCESS.getCode());
+        resultData.setMsg(LOGIN_SUCCESS.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @author
+     * @description
+     *      登录成功
+     *      自定义返回消息
+     * @param []
+     * @date 2020/7/8
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
+    protected ResultData loginSuccess(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(LOGIN_SUCCESS.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+
+
+
+
+
+
+}
