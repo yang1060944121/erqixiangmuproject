@@ -6,13 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="project-service" />
         <module name="project-common" />
         <module name="project-consumer-management" />
-        <module name="project-provider-management" />
+        <module name="project-eureka-6082" />
         <module name="project-zuul" />
-        <module name="project-management" />
-        <module name="project-eureka-management" />
+        <module name="project-eureka-6083" />
+        <module name="project-provider-backup" />
+        <module name="project-model" />
         <module name="project-config" />
+        <module name="project-api" />
+        <module name="project-mapper" />
+        <module name="project-eureka-6081" />
       </profile>
     </annotationProcessing>
   </component>
