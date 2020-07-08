@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/erqixiangmu-project.iml" filepath="$PROJECT_DIR$/.idea/erqixiangmu-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-management/project-api/project-api.iml" filepath="$PROJECT_DIR$/project-management/project-api/project-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-common/project-common.iml" filepath="$PROJECT_DIR$/project-common/project-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-config/project-config.iml" filepath="$PROJECT_DIR$/project-config/project-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-consumer-management/project-consumer-management.iml" filepath="$PROJECT_DIR$/project-consumer-management/project-consumer-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-eureka-management/project-eureka-6081/project-eureka-6081.iml" filepath="$PROJECT_DIR$/project-eureka-management/project-eureka-6081/project-eureka-6081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-eureka-management/project-eureka-6082/project-eureka-6082.iml" filepath="$PROJECT_DIR$/project-eureka-management/project-eureka-6082/project-eureka-6082.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-eureka-management/project-eureka-6083/project-eureka-6083.iml" filepath="$PROJECT_DIR$/project-eureka-management/project-eureka-6083/project-eureka-6083.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-eureka-management/project-eureka-management.iml" filepath="$PROJECT_DIR$/project-eureka-management/project-eureka-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-management/project-management.iml" filepath="$PROJECT_DIR$/project-management/project-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-management/project-mapper/project-mapper.iml" filepath="$PROJECT_DIR$/project-management/project-mapper/project-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-management/project-model/project-model.iml" filepath="$PROJECT_DIR$/project-management/project-model/project-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-provider-management/project-provider-backup/project-provider-backup.iml" filepath="$PROJECT_DIR$/project-provider-management/project-provider-backup/project-provider-backup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-provider-management/project-provider-management.iml" filepath="$PROJECT_DIR$/project-provider-management/project-provider-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-management/project-service/project-service.iml" filepath="$PROJECT_DIR$/project-management/project-service/project-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-zuul/project-zuul.iml" filepath="$PROJECT_DIR$/project-zuul/project-zuul.iml" />
+    </modules>
+  </component>
+</project>
