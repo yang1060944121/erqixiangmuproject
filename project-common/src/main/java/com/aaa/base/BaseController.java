@@ -55,6 +55,79 @@ public class BaseController {
         return resultData;
     }
 
+    /**
+     * @author
+     * @description
+     *      登录成功
+     *      返回数据信息，使用系统消息
+     * @param []
+     * @date 2020/7/8
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
+
+    protected ResultData loginSuccess(Object data) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(LOGIN_SUCCESS.getCode());
+        resultData.setMsg(LOGIN_SUCCESS.getMsg());
+        resultData.setData(data);
+        return resultData;
+    }
+
+    /**
+     * @author Seven Lee
+     * @description
+     *      登录成功
+     *      返回数据信息，自定义消息
+     * @param []
+     * @date 2020/7/8
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
+    protected ResultData loginSuccess(String msg, Object data) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(LOGIN_SUCCESS.getCode());
+        resultData.setMsg(msg);
+        resultData.setData(data);
+        return resultData;
+    }
+
+    /**
+     * @author Seven Lee
+     * @description
+     *      登录失败，使用系统消息
+     * @param []
+     * @date 2020/7/8
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
+    protected ResultData loginFailed() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(LOGIN_FAILED.getCode());
+        resultData.setMsg(LOGIN_FAILED.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @author Seven Lee
+     * @description
+     *      登录失败，使用系统消息，详细解释说明
+     * @param []
+     * @date 2020/7/8
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
+    protected ResultData loginFailed(String detail) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(LOGIN_FAILED.getCode());
+        resultData.setMsg(LOGIN_FAILED.getMsg());
+        resultData.setDetail(detail);
+        return resultData;
+    }
+
+
+
+
 
 
 
