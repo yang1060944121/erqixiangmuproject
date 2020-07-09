@@ -1,6 +1,10 @@
 package com.aaa.base;
 
+import com.sun.net.httpserver.Authenticator;
+
 import static com.aaa.status.LoginStatus.*;
+import static com.aaa.status.OperationStatus.FAILED;
+import static com.aaa.status.OperationStatus.SUCCESS;
 
 /**
  * @Company AAA软件教育
@@ -75,7 +79,7 @@ public class BaseController {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      登录成功
      *      返回数据信息，自定义消息
@@ -93,7 +97,7 @@ public class BaseController {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      登录失败，使用系统消息
      * @param []
@@ -109,7 +113,7 @@ public class BaseController {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      登录失败，使用系统消息，详细解释说明
      * @param []
@@ -125,13 +129,39 @@ public class BaseController {
         return resultData;
     }
 
+    /**
+     * @author
+     * @description
+     *      操作成功，返回系统消息
+     * @param []
+     * @date 2020/7/9
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
 
+    protected ResultData operationSuccess(){
+        ResultData resultData = new ResultData();
+        resultData.setCode(SUCCESS.getCode());
+        resultData.setMsg(SUCCESS.getMsg());
+        return resultData;
+    }
 
+    /**
+     * @author
+     * @description
+     *      操作失败，返回系统消息
+     * @param []
+     * @date 2020/7/9
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
 
-
-
-
-
+    protected ResultData operationFailed(){
+        ResultData resultData = new ResultData();
+        resultData.setCode(FAILED.getCode());
+        resultData.setMsg(FAILED.getMsg());
+        return resultData;
+    }
 
 
 }
