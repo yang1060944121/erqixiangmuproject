@@ -1,5 +1,6 @@
 package com.aaa.base;
 
+import com.aaa.model.User;
 import com.aaa.utils.Map2BeanUtils;
 import com.aaa.utils.SpringContextUtils;
 import com.github.pagehelper.PageHelper;
@@ -20,7 +21,7 @@ import static com.aaa.staticproperties.OrderStatic.DESC;
 
 /**
  * @Company AAA软件教育
- * @Author Seven Lee
+ * @Author
  * @Date Create in 2020/7/8 11:42
  * @Description
  *      通用service
@@ -96,7 +97,7 @@ public abstract class BaseService<T> {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      update username = ?  from user where id in (1,2,3,4,5,6,7)
      * @param [t, ids]
@@ -176,7 +177,7 @@ public abstract class BaseService<T> {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      查询集合，条件查询
      * @param [t]
@@ -189,7 +190,7 @@ public abstract class BaseService<T> {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      查询集合，分页查询
      * @param []
@@ -205,7 +206,7 @@ public abstract class BaseService<T> {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      Map转换实体类型
      * @param [map]
@@ -218,7 +219,7 @@ public abstract class BaseService<T> {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      实现查询通用
      *          不但可以作用于分页，还可以作用于排序，还能作用于多条件查询
@@ -261,7 +262,7 @@ public abstract class BaseService<T> {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      获取子类泛型类型
      * @param []
@@ -277,7 +278,7 @@ public abstract class BaseService<T> {
     }
 
     /**
-     * @author Seven Lee
+     * @author
      * @description
      *      获取spring容器/获取spring的上下文
      *      在项目开始运行的时候，会去加载spring配置，
@@ -296,8 +297,6 @@ public abstract class BaseService<T> {
     public ApplicationContext getApplicationContext() {
         return SpringContextUtils.getApplicationContext();
     }
-
-
 
 
 

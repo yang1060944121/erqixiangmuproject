@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Company AAA软件教育
- * @Author Seven Lee
+ * @Author
  * @Date Create in 2020/7/8 11:48
  * @Description
  **/
@@ -26,10 +26,10 @@ public class UserController extends CommonController<User> {
         return userService;
     }
 
-    @PostMapping("/add")
-    public ResultData add(User user) {
-        return userService.insertDta(user);
-    }
+//    @PostMapping("/add")
+//    public ResultData add(User user) {
+//        return userService.insertDta(user);
+//    }
 
     @PostMapping("/add")
     public Object selectAllRoles() {

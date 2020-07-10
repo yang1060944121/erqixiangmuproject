@@ -1,10 +1,9 @@
 package com.aaa.base;
 
-import com.sun.net.httpserver.Authenticator;
 
+import static com.aaa.status.OperationStatus.*;
 import static com.aaa.status.LoginStatus.*;
-import static com.aaa.status.OperationStatus.FAILED;
-import static com.aaa.status.OperationStatus.SUCCESS;
+
 
 /**
  * @Company AAA软件教育
@@ -25,6 +24,7 @@ import static com.aaa.status.OperationStatus.SUCCESS;
  *
  **/
 public class BaseController {
+
     /**
      * @author
      * @description
@@ -34,8 +34,8 @@ public class BaseController {
      * @date 2020/7/8
      * @return com.aaa.lee.base.ResultData
      * @throws
-     **/
-    protected ResultData loginSuccess(){
+    **/
+    protected ResultData loginSuccess() {
         ResultData resultData = new ResultData();
         resultData.setCode(LOGIN_SUCCESS.getCode());
         resultData.setMsg(LOGIN_SUCCESS.getMsg());
@@ -69,7 +69,6 @@ public class BaseController {
      * @return com.aaa.lee.base.ResultData
      * @throws
      **/
-
     protected ResultData loginSuccess(Object data) {
         ResultData resultData = new ResultData();
         resultData.setCode(LOGIN_SUCCESS.getCode());
@@ -104,7 +103,7 @@ public class BaseController {
      * @date 2020/7/8
      * @return com.aaa.lee.base.ResultData
      * @throws
-     **/
+    **/
     protected ResultData loginFailed() {
         ResultData resultData = new ResultData();
         resultData.setCode(LOGIN_FAILED.getCode());
@@ -137,12 +136,28 @@ public class BaseController {
      * @date 2020/7/9
      * @return com.aaa.lee.base.ResultData
      * @throws
-     **/
-
-    protected ResultData operationSuccess(){
+    **/
+    protected ResultData operationSuccess() {
         ResultData resultData = new ResultData();
         resultData.setCode(SUCCESS.getCode());
         resultData.setMsg(SUCCESS.getMsg());
+        return resultData;
+    }
+
+    /**
+     * @author
+     * @description
+     *      操作成功，返回系统消息
+     * @param []
+     * @date 2020/7/9
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
+    protected ResultData operationSuccess(Object data) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(SUCCESS.getCode());
+        resultData.setMsg(SUCCESS.getMsg());
+        resultData.setData(data);
         return resultData;
     }
 
@@ -155,13 +170,33 @@ public class BaseController {
      * @return com.aaa.lee.base.ResultData
      * @throws
      **/
-
-    protected ResultData operationFailed(){
+    protected ResultData operationFailed() {
         ResultData resultData = new ResultData();
         resultData.setCode(FAILED.getCode());
         resultData.setMsg(FAILED.getMsg());
         return resultData;
     }
+
+    /**
+     * @author
+     * @description
+     *      操作失败，返回系统消息
+     * @param []
+     * @date 2020/7/9
+     * @return com.aaa.lee.base.ResultData
+     * @throws
+     **/
+    protected ResultData operationFailed(String msg) {
+        ResultData resultData = new ResultData();
+        resultData.setCode(FAILED.getCode());
+        resultData.setMsg(msg);
+        return resultData;
+    }
+
+    // TODO 代码未完善，记得补充
+
+
+
 
 
 }

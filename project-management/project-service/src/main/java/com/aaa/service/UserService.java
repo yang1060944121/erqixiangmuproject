@@ -10,4 +10,6 @@ public class UserService  extends BaseService<User> {
     public Object selectAllRoles(){
         return null;
     }
+
+
 }

@@ -12,12 +12,12 @@
         <module name="project-eureka-6083" />
         <module name="project-eureka-6082" />
         <module name="project-eureka-6081" />
-        <module name="project-config" />
+        <module name="project-mapper" />
         <module name="project-provider-backup" />
         <module name="project-zuul" />
-        <module name="project-common" />
+        <module name="project-config" />
         <module name="project-api" />
-        <module name="project-mapper" />
+        <module name="project-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
