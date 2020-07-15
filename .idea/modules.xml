@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/project-management/project-api/project-api.iml" filepath="$PROJECT_DIR$/project-management/project-api/project-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-common/project-common.iml" filepath="$PROJECT_DIR$/project-common/project-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-config/project-config.iml" filepath="$PROJECT_DIR$/project-config/project-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project-consumer-management/project-consumer-backup/project-consumer-backup.iml" filepath="$PROJECT_DIR$/project-consumer-management/project-consumer-backup/project-consumer-backup.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-consumer-management/project-consumer-management.iml" filepath="$PROJECT_DIR$/project-consumer-management/project-consumer-management.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-eureka-management/project-eureka-6081/project-eureka-6081.iml" filepath="$PROJECT_DIR$/project-eureka-management/project-eureka-6081/project-eureka-6081.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-eureka-management/project-eureka-6082/project-eureka-6082.iml" filepath="$PROJECT_DIR$/project-eureka-management/project-eureka-6082/project-eureka-6082.iml" />

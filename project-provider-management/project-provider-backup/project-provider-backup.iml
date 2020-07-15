@@ -28,9 +28,9 @@
     <orderEntry type="module" module-name="project-service" />
     <orderEntry type="module" module-name="project-mapper" />
     <orderEntry type="module" module-name="project-model" />
+    <orderEntry type="library" name="Maven: javax.persistence:persistence-api:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-spring-boot-starter:2.1.5" level="project" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-core:1.1.5" level="project" />
-    <orderEntry type="library" name="Maven: javax.persistence:persistence-api:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-base:1.1.5" level="project" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-weekend:1.1.5" level="project" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-spring:1.1.5" level="project" />

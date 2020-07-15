@@ -8,16 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="project-service" />
         <module name="project-model" />
-        <module name="project-consumer-management" />
         <module name="project-eureka-6083" />
         <module name="project-eureka-6082" />
         <module name="project-eureka-6081" />
-        <module name="project-mapper" />
+        <module name="project-consumer-backup" />
+        <module name="project-common" />
         <module name="project-provider-backup" />
         <module name="project-zuul" />
         <module name="project-config" />
         <module name="project-api" />
-        <module name="project-common" />
+        <module name="project-mapper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +25,7 @@
       <module name="project-api" target="1.8" />
       <module name="project-common" target="1.8" />
       <module name="project-config" target="1.8" />
+      <module name="project-consumer-backup" target="1.8" />
       <module name="project-consumer-management" target="1.8" />
       <module name="project-eureka-6081" target="1.8" />
       <module name="project-eureka-6082" target="1.8" />

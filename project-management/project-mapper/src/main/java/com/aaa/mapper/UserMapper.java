@@ -1,4 +1,7 @@
 package com.aaa.mapper;
 
-public interface UserMapper {
+import com.aaa.model.User;
+import tk.mybatis.mapper.common.Mapper;
+
+public interface UserMapper extends Mapper<User> {
 }

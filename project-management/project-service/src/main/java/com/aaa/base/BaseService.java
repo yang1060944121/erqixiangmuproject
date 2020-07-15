@@ -1,6 +1,5 @@
 package com.aaa.base;
 
-import com.aaa.model.User;
 import com.aaa.utils.Map2BeanUtils;
 import com.aaa.utils.SpringContextUtils;
 import com.github.pagehelper.PageHelper;

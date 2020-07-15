@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>project-consumer-management</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>project-consumer-backup</module>
+    </modules>
 
     <dependencies>
         <dependency>
