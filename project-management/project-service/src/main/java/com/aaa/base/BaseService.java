@@ -76,7 +76,7 @@ public abstract class BaseService<T> {
      * @throws
      **/
 
-    public Integer deleteByIds(List<Integer> ids){
+    public Integer deleteByIds(List<Object> ids){
         Example example = Example.builder(getTypeArguement()).where(Sqls.custom().andIn("id",ids)).build();
         return mapper.deleteByExample(example);
     }
@@ -171,7 +171,7 @@ public abstract class BaseService<T> {
      * @throws
      **/
 
-    public PageInfo<T> selectListByPageAndFiled(Integer pageNo, Integer pageSize, Sqls where, String orderFiled, String... fileds) {
+    public PageInfo<T> queryListByPageAndFiled(Integer pageNo, Integer pageSize, Sqls where, String orderFiled, String... fileds) {
         return new PageInfo<T>(selectByFileds(pageNo, pageSize, where, orderFiled, null, fileds));
     }
 

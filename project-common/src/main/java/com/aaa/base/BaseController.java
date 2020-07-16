@@ -1,6 +1,8 @@
 package com.aaa.base;
 
 
+import javax.management.Query;
+
 import static com.aaa.status.OperationStatus.*;
 import static com.aaa.status.LoginStatus.*;
 
@@ -193,7 +195,25 @@ public class BaseController {
         return resultData;
     }
 
-    // TODO 代码未完善，记得补充
+
+  //查询成功，返回系统消息
+
+    protected ResultData getSuccess(Object data){
+        ResultData resultData = new ResultData();
+        resultData.setCode(QUERY_SUCCESS.getCode());
+        resultData.setMsg(QUERY_FAILED.getMsg());
+        resultData.setData(data);
+        return resultData;
+    }
+
+    //查询失败，返回系统信息
+
+    protected ResultData getFalse(){
+        ResultData resultData = new ResultData();
+        resultData.setCode(QUERY_FAILED.getCode());
+        resultData.setMsg(QUERY_FAILED.getMsg());
+        return resultData;
+    }
 
 
 

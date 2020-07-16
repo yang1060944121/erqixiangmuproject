@@ -1,14 +1,21 @@
 package com.aaa.service;
 
 import com.aaa.base.BaseService;
+import com.aaa.mapper.UserMapper;
 import com.aaa.model.User;
 import com.aaa.vo.TokenVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigInteger;
+import java.util.HashMap;
 import java.util.UUID;
 
 @Service
 public class LoginService extends BaseService<User> {
+
+    @Autowired
+    private UserMapper userMapper;
     /**
      * @author Seven Lee
      * @description
@@ -71,7 +78,11 @@ public class LoginService extends BaseService<User> {
 
     }
 
-
+    public BigInteger getId(User user){
+        HashMap<String,Object> map = userMapper.selectId(user.getUsername());
+        BigInteger id = (BigInteger) map.get("id");
+        return id;
+    }
 
 
 

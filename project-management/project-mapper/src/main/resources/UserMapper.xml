@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.aaa.lee.mapper.UserMapper" >
+<mapper namespace="com.aaa.mapper.UserMapper" >
   <resultMap id="BaseResultMap" type="com.aaa.model.User" >
     <!--
       WARNING - @mbg.generated
@@ -21,4 +21,9 @@
     <result column="type" property="type" jdbcType="CHAR" />
     <result column="token" property="token" jdbcType="VARCHAR" />
   </resultMap>
+
+  <select id="selectId" resultType="HashMap">
+    select * from t_user where username = #{username}
+  </select>
+
 </mapper>

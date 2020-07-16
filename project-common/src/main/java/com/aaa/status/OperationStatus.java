@@ -11,7 +11,13 @@ public enum OperationStatus {
     ZUUL_FILTER_FAILED("7", "路由过滤失败"),
     ZUUL_FILTER_TOKEN_SUCCESS("8", "token值存在"),
     ZUUL_FILTER_TOKEN_FAILED("9", "token值不存在"),
-    REQUEST_IS_NULL("10", "request对象为null");
+    REQUEST_IS_NULL("10", "request对象为null"),
+    QUERY_SUCCESS("11","查询成功"),
+    QUERY_FAILED("12","查询失败"),
+    INSERT_SUCCESS("13","添加成功"),
+    INSERT_FALSE("14","添加失败"),
+    UPLOAD_SUCCESS("15","文件上传成功"),
+    UPLOAD_FAILED("16","文件上传失败");
 
 
 
