@@ -37,13 +37,13 @@ public class MappingProjectController extends BaseController {
 
     }
 
-    //根据项目汇交类型查询所有汇交项目
-    @RequestMapping("/selectAllByResultsstatus")
-    public ResultData<Mappingproject> AllByResultsstatus(String Resultsstatus) {
+    //根据项目类型查询所有汇交项目
+    @RequestMapping("/selectAllByType")
+    public ResultData<Mappingproject> getAllByType(String projectType) {
         List<Mappingproject> mappingprojectList = null;
         try {
             //调用iProjectService中的selectAllByResultsstatus方法获取数据
-            mappingprojectList = iProjectService.selectAllBYResultsstatus(Resultsstatus);
+            mappingprojectList = iProjectService.selectAllByType(projectType);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -60,8 +60,7 @@ public class MappingProjectController extends BaseController {
 
 
 
-
-
+    //分页查询方法
     //重写BaseService中的queryListBypage方法
     @RequestMapping("/selectAllByPage")
     public PageInfo selectAllByPage(Mappingproject mappingproject, Integer pageNo, Integer pageSize){

@@ -60,7 +60,7 @@
   </select>
 
   //根据项目类型查询已提交项目
-  <select id="selectAllByResultsstatus" resultMap="BaseResultMap" parameterType="java.lang.String">
+  <select id="selectAllByProjectType" resultMap="BaseResultMap" parameterType="java.lang.String">
     select id,project_type,project_name,project_amount,project_leader,start_date,end_date,complete_time,acceptance_department
      ,acceptance_report,task_source,project_area,scale,sheet_number,awards_department,prize_level,project_quality_approval,winning_time
      ,acceptance_time,basic_content,credit_status,submit_status,user_id,schedule,create_time,modify_time,memo,status,audit_status
@@ -68,6 +68,7 @@
      ,phone,address,center_point,synchronization_status,contract_time
      from t_mapping_project
      where results_status=0
+     and project_type=#{projectType, jdbcType=VARCHAR}
   </select>
 
 

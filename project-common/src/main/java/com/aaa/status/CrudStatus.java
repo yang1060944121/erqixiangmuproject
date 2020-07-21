@@ -16,7 +16,7 @@ public enum CrudStatus {
     UPDATE_SUCCESS("20003","更改数据成功"),
     UPDATE_FAILED("10003","更改数据失败"),
     DELETE_SUCCESS("20004","删除数据成功"),
-    DElETE_FAILED("10004","删除数据失败"),
+    DELETE_FAILED("10004","删除数据失败"),
     UPLOAD_SUCCESS("20005","文件上传成功"),
     UPLOAD_FAILED("10005","文件上传失败");
 

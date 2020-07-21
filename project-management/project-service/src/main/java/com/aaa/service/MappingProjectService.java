@@ -32,12 +32,12 @@ public class MappingProjectService extends BaseService<Mappingproject> {
         }
     }
 
-    //查询所有项目汇交通过的项目
-    public List<Mappingproject> selectAllByResultsstatus(String resultsstatus){
+    //根据项目类型进行查询
+    public List<Mappingproject> selectAllByProjectType(String projectType){
         List<Mappingproject> mappingprojectList = null;
         try {
-            //调用mappingProjetMapper 中的selectAllByResultsstatus方法，返回结果
-            mappingprojectList = mappingprojectMapper.selectAllByResultsstatus(resultsstatus);
+            //调用mappingProjetMapper selectAllByProjectType，返回结果
+            mappingprojectList = mappingprojectMapper.selectAllByProjectType(projectType);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -75,7 +75,8 @@ public class MappingProjectService extends BaseService<Mappingproject> {
     }
 
     //分页查询方法
-//    @Override
+
+    @Override
     public PageInfo<Mappingproject> queryListByPage(Mappingproject mappingproject, Integer pageNo, Integer pageSize) {
         List<Mappingproject> select = null;
         PageInfo<Mappingproject> pageInfo = null;

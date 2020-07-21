@@ -11,7 +11,7 @@ public interface MappingprojectMapper extends Mapper<Mappingproject> {
     List<Mappingproject> seleztAllMappingProject();
 
     //根据项目类型查询所有提交项目
-    List<Mappingproject> selectAllByResultsstatus(String projectType);
+    List<Mappingproject> selectAllByProjectType(String projectType);
 
     //根据项目名称模糊查询
     List<Mappingproject> fuzzyProjectName(@Param("projectName") String projectName);

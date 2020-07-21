@@ -1,5 +1,6 @@
 package com.aaa.base;
 
+import com.aaa.model.News;
 import com.aaa.utils.Map2BeanUtils;
 import com.aaa.utils.SpringContextUtils;
 import com.github.pagehelper.PageHelper;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import tk.mybatis.mapper.entity.Example;
 import tk.mybatis.mapper.util.Sqls;
 
+import javax.swing.event.ListDataEvent;
 import java.lang.reflect.ParameterizedType;
 import java.util.Arrays;
 import java.util.List;
@@ -298,5 +300,26 @@ public abstract class BaseService<T> {
     }
 
 
+    //通过主键批量删除
+    public Integer batchDelete(List<Object> ids) throws Exception {
+        Example example = Example.builder(getTypeArguement()).where(Sqls.custom().andIn("id", ids)).build();
+        return mapper.deleteByExample(example);
+    }
 
+    //分页查询
+    public PageInfo<T> queryListByPage(T t, Integer pageNo, Integer pageSize) throws Exception {
+        PageHelper.startPage(pageNo, pageSize);
+        List<T> select = mapper.select(t);
+        PageInfo<T> pageInfo = new PageInfo<T>(select);
+        return pageInfo;
+    }
+
+    //（dict)条件查询
+    public List<T>  queryList(T t) throws Exception{
+        return mapper.select(t);
+    }
+
+
+
+    public abstract List<News> selectNews(Long id);
 }

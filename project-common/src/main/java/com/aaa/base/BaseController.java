@@ -1,8 +1,8 @@
 package com.aaa.base;
 
 
-import javax.management.Query;
 
+import static com.aaa.status.CrudStatus.*;
 import static com.aaa.status.OperationStatus.*;
 import static com.aaa.status.LoginStatus.*;
 
@@ -215,6 +215,70 @@ public class BaseController {
         return resultData;
     }
 
+    //新增成功
+    protected ResultData addSuccess(){
+        ResultData resultData = new ResultData();
+        resultData.setCode(ADD_SUCCESS.getCode());
+        resultData.setMsg(ADD_SUCCESS.getMsg());
+        return resultData;
+    }
+
+    //新增失败
+    protected ResultData addFalse(){
+        ResultData resultData = new ResultData();
+        resultData.setCode(ADD_FAILED.getCode());
+        resultData.setMsg(ADD_FAILED.getMsg());
+        return resultData;
+    }
+
+    //删除成功
+    protected ResultData deleteSuccess() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(DELETE_SUCCESS.getCode());
+        resultData.setMsg(DELETE_SUCCESS.getMsg());
+        return resultData;
+    }
+
+    //删除失败
+    protected ResultData deleteFalse() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(DELETE_FAILED.getCode());
+        resultData.setMsg(DELETE_FAILED.getMsg());
+        return resultData;
+    }
+
+    //更新成功
+    protected ResultData updateSuccess() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPDATE_SUCCESS.getCode());
+        resultData.setMsg(UPDATE_SUCCESS.getMsg());
+        return resultData;
+    }
+
+
+    //更新失败
+    protected ResultData updateFalse() {
+        ResultData resultData = new ResultData();
+        resultData.setCode(UPDATE_FAILED.getCode());
+        resultData.setMsg(UPDATE_FAILED.getMsg());
+        return resultData;
+    }
+
+    //新增成功
+    protected ResultData insertSuccess(){
+        ResultData resultData = new ResultData();
+        resultData.setCode(INSERT_SUCCESS.getCode());
+        resultData.setMsg(INSERT_SUCCESS.getMsg());
+        return resultData;
+    }
+
+    //新增失败
+    protected ResultData insertFalse(){
+        ResultData resultData = new ResultData();
+        resultData.setCode(INSERT_FALSE.getCode());
+        resultData.setMsg(INSERT_FALSE.getMsg());
+        return resultData;
+    }
 
 
 

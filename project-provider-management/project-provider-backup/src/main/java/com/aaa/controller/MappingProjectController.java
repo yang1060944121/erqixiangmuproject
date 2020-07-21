@@ -24,16 +24,16 @@ public class MappingProjectController {
         return mappingprojectList;
     }
 
-    //查询所有项目汇交通过的项目
-    @RequestMapping("/selectAllByResultsstatus")
-    public List<Mappingproject> selectAllByResultsstatus(@RequestParam(value = "resultsstatus",required = false) String Resultsstatus){
-        // 调用 mappingProjectService 中的 selectAllByResultsstatus 方法，得到结果
-        List<Mappingproject> allByResultsstatus = mappingProjectService.selectAllByResultsstatus(Resultsstatus);
+    //根据项目类型查询项目信息
+    @RequestMapping("/selectAllByType")
+    public List<Mappingproject> selectAllByType(@RequestParam(value = "projectType",required = false) String projectType){
+        // 调用 mappingProjectService 中的 getAllByProjectType 方法，得到结果
+        List<Mappingproject> allByType = mappingProjectService.selectAllByProjectType(projectType);
         //判断是否为空
-        if (allByResultsstatus == null) {
+        if (allByType == null) {
             return null;
         }else {
-            return allByResultsstatus;
+            return allByType;
         }
     }
 

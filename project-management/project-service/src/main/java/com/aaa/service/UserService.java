@@ -91,7 +91,7 @@ public class UserService extends BaseService<User> {
         if (!"".equals(user) && null !=user){
             try {
                 //执行删除操作
-                Integer delete = delete(user);
+                Integer delete = userMapper.delete(user);
                 if (delete>0){
                     return delete;
                 }
